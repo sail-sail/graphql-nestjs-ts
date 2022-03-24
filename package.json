@@ -3,24 +3,18 @@
 	"displayName": "",
 	"description": "graphql-nestjs-ts",
 	"version": "0.0.1",
+	"publisher": "151263555",
 	"engines": {
-		"vscode": "^1.65.0"
+		"vscode": "^1.65.2"
 	},
 	"categories": [
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:graphql-nestjs-ts.helloWorld"
+    "onLanguage:typescript",
+    "onLanguage:graphql"
 	],
 	"main": "./dist/extension.js",
-	"contributes": {
-		"commands": [
-			{
-				"command": "graphql-nestjs-ts.helloWorld",
-				"title": "Hello World"
-			}
-		]
-	},
 	"scripts": {
 		"vscode:prepublish": "npm run package",
 		"compile": "webpack",
@@ -31,6 +25,10 @@
 		"pretest": "npm run compile-tests && npm run compile && npm run lint",
 		"lint": "eslint src --ext ts",
 		"test": "node ./out/test/runTest.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sail-sail/graphql-nestjs-ts.git"
 	},
 	"devDependencies": {
 		"@types/vscode": "^1.65.0",
