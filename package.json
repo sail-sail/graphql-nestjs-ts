@@ -1,8 +1,9 @@
 {
   "name": "graphql-nestjs-ts",
-	"displayName": "",
+	"license": "MIT",
+	"displayName": "graphql-nestjs-ts",
 	"description": "graphql-nestjs-ts",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "151263555",
 	"engines": {
 		"vscode": "^1.65.2"
